@@ -1,0 +1,45 @@
+problem 1 :
+
+    Generally it the usage of setTimeOut and setImmidate depends on your scenario 
+
+    you have in you code. BUT we can use setImmmidate for not blocking the 
+
+    event loop where as setTimeOut can be used for controlled delays.
+
+
+
+problem 2 :
+
+   process.nextTick() is not part of the event loop and adds the callback 
+
+   into the nextTick queue.But SetImmidate schedules a callback to run
+
+   at check phase of the event loop.
+
+
+
+   Use setImmediate if you want to queue the function behind whatever I/O
+
+   event callbacks that are already in the event queue. 
+
+   Use process.nextTick to effectively queue the function at the head of
+
+   the event queue so that it executes immediately after the current 
+
+   function completes.
+
+
+
+Problem 3 : 
+
+    fs          timers
+
+    http        url
+
+    https       v8
+
+    os          vm
+
+    assert      Zlib
+
+    stream      readline
