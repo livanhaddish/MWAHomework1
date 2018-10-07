@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lecture 5</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>List of users --- Using ExpressJS with EJS templates</h1>
+    <% userList.forEach(user => { %>
+    <div class="user-info">
+        <img src="<%= user.photoURL %>"/><br>
+        <span>Name: </span><%= user.name %><br>
+        <span>Username: </span><%= user.username %><br>
+        <span>Email: </span><%= user.email %><br>
+        <span>City: </span><%= user.address.city %><br>
+        <span>Phone: </span><%= user.phone %><br>
+        <span>Website: </span><%= user.website %><br>
+        <span>Company Name: </span><%= user.company.name %><br>
+    </div>
+    <% }); %>
+    <div></div>
+</body>
+
+</html>
