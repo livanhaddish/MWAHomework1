@@ -1,0 +1,89 @@
+-Used Indexes 
+
+db.locations.createIndex({category: 1, name: 1})
+
+db.locations.createIndex({category: 1, location: 1})
+
+db.locations.createIndex({name: 1, location: 1})
+
+db.locations.createIndex({location: '2d'})
+
+
+
+
+
+-Data used in mongo Database:
+
+
+
+[{
+
+"name": "Mum" , 
+
+"category": "Academic", 
+
+"location": [41.017831, -91.967407]
+
+},
+
+{
+
+"name": "Mum Library" , 
+
+"category": "Academic", 
+
+"location": [41.018059, -91.968753]
+
+},
+
+{
+
+"name": "Mum School" , 
+
+"category": "academic", 
+
+"location": [41.015418, -91.967061]
+
+},
+
+{
+
+"name": "Everybody's Whole Foods" , 
+
+"category": "Supermarket", 
+
+"location": [41.012207, -91.964701]
+
+},
+
+{
+
+"name": "Mac Donalds" , 
+
+"category": "Fast Food", 
+
+"location": [41.006885, -91.982842]
+
+},
+
+{
+
+"name": "Fairfield Post Office" , 
+
+"category": "Postal office", 
+
+"location": [41.007419, -91.965318]
+
+},
+
+{
+
+"name": "Hy-Vee" , 
+
+"category": "Supermarket", 
+
+"location": [41.004622, -91.978458]
+
+}
+
+]

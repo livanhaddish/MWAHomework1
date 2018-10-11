@@ -1,0 +1,51 @@
+book = {
+
+    "_id": int,
+
+    "isbn": string,
+
+    "name": string,
+
+    "author": string,
+
+    "tags": [string,...]
+
+    "studentId": int
+
+}
+
+
+
+student = {
+
+    "_id": int,
+
+    "name": string,
+
+    "books": [{
+
+        "bookId": int,
+
+        "returningDate": date
+
+        },...]
+
+}
+
+
+
+
+
+indexes1 = {"author": 1, "tags": 1}
+
+
+
+indexes2 = {"author": 1, "name": 1}
+
+
+
+indexes3 = {"isbn_number": 1, "name": 1}
+
+
+
+indexes4 = {"name": 1, "books": 1}
