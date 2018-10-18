@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ComponentXComponent } from './newComp.component';
+import { newCompComponent } from './newComp.component';
 import { MyvisibilityDirective } from './myvisibility.directive';
 import { MynewcolorDirective } from './mynewcolor.directive';
 
